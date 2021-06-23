@@ -53,7 +53,7 @@ nav {
 .noticias {
     font-family: 'Montserrat', sans-serif;
     background-image: url(img/01-home-noticias.jpg);
-    height: 95vh;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -342,4 +342,224 @@ nav {
     height: 95vh;
     display: flex;
     text-align: center;
+}
+
+/* SECTION DISCOS */
+.tagDiscografia{
+    display: flex;
+    margin-bottom: 3rem;
+}
+.disco{
+    width: 31.5%;
+    border: 1px solid black;
+    margin: auto;
+    height: 33rem;
+    border-radius: 5px;
+    background-color: #514134;
+    box-shadow: 17px 10px 25px -18px rgb(0 0 0 / 75%);
+}
+.disco figure{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.disco figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tituloDisco{
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+    
+
+}
+.tituloDisco h1{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1.8px;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.tituloDisco hr{
+    width: 20%;
+    height: .5rem;
+    margin: 1.5rem auto;
+    background-color:#FDD2A8;
+    border: 0;
+}
+.btn-discografia{
+    padding: .5rem 1rem;
+    background-color: #514134;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+/* SECCION CONTACTO */
+.contacto{
+    background-image: url(img/03-home-contacto.jpg);
+    /* height: 120vh; */
+    padding-bottom: 4rem;
+    /* display: flex; */
+    padding-top:4rem ;
+}
+
+.containerForm{
+    width: 32.5%;
+    border: 1px solid black;
+    margin: 0 auto;
+    background-color: #514134;
+    padding: 3rem;
+    position: relative;
+}
+.cabeceraContacto{
+    display: flex;
+}
+.cabeceraContacto h1{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.containerForm input{
+    width: 100%;
+    display: flex;;
+}
+.campoInput{
+    margin: 2rem 0;
+    position: relative;
+}
+
+.campoInput label{
+    color: #B2ABA5;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    position: absolute;
+    top:10px;
+    
+}
+.animacion-input{
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in;
+    font-size: .5rem !important;
+}
+
+
+
+.formulario input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    
+}
+.politicaForm{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+
+.campoInput input:focus{
+    box-shadow: none;
+    outline: 0;
+}
+
+
+.politicaForm input{
+    width: auto;
+    margin: 0 1.8rem 0 0;
+    
+}
+.politicaForm p{
+    color: #B2ABA5;
+    font-weight: 600;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.politicaForm a{
+    text-decoration: none;
+    color: #FDD2A8 ;
+    
+}
+
+.btn-enviar{
+    padding: 0.8rem 1.8rem ;
+    margin-top: 3rem;
+    background-color: #D6B491;
+    color: #fff;
+    /* margin-top: 4rem; */
+}
+/* FOOTER */
+
+footer{
+    background-color: #d6b392;
+    text-align: center;
+    font-family: "IBM Plex Serif", serif;
+    padding: 0 3rem;
+   /* display: flex; */
+
+}
+
+footer h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.enterateNoticias{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.correo{
+    width: 50%;
+}
+.enterateNoticias h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.enterateNoticias input{
+    width: 90%;
+    height: 3rem;
+    border: 1px solid black;
+    background-color: transparent;
+}
+.politicaFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-suscribete{
+ margin: 2.5rem;
+}
+.btn-suscribete a{
+    padding: .8rem 2rem;
+    background-color: #514134;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.avisoLegal{
+    display: flex;
+    justify-content: space-between;
 }

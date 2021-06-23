@@ -17,14 +17,15 @@ window.addEventListener('scroll',function(){
     navegador.classList.toggle('cambio', window.scrollY > 0);
 });
 
+// Cambiar apariencia entre tag1 y tag
 const tarjeta1 = document.querySelector("#tarjeta1");
 const subtarjeta1 = document.querySelector("#subtarjeta1");
 
 const tarjeta2 = document.querySelector('#tarjeta2');
-const subtarjeta2 = document.querySelector('#subtarjeta2')
+const subtarjeta2 = document.querySelector('#subtarjeta2');
 
 const tarjeta3 = document.querySelector('#tarjeta3');
-const subtarjeta3 = document.querySelector('#subtarjeta3')
+const subtarjeta3 = document.querySelector('#subtarjeta3');
 
 
 
@@ -74,4 +75,14 @@ tarjeta3.addEventListener('click',()=>{
     subtarjeta3.classList.toggle("ocultar");
 });
 
+// Imputs del formulario
 
+
+// const input = document.querySelector('.inputFormulario');
+// //const input = document.querySelectorAll('.inputFormulario');
+// const label = document.querySelector('.labelFormulario');
+
+// input.addEventListener('click', ()=>{
+//     label.classList.toggle('animacion-input');
+//     console.log('has hecho click en un input');
+// })
