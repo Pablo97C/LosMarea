@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+
+/* SECCION CONTACTO */
+.contacto{
+    background-image: url(img/03-home-contacto.jpg);
+    /* height: 120vh; */
+    padding-bottom: 4rem;
+    /* display: flex; */
+    padding-top:4rem ;
+}
+
+.containerForm{
+    width: 32.5%;
+    border: 1px solid black;
+    margin: 0 auto;
+    background-color: #514134;
+    padding: 3rem;
+    position: relative;
+}
+.cabeceraContacto{
+    display: flex;
+}
+.cabeceraContacto h1{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.containerForm input{
+    width: 100%;
+    display: flex;;
+}
+.campoInput{
+    margin: 2rem 0;
+    position: relative;
+}
+
+.campoInput label{
+    color: #B2ABA5;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    position: absolute;
+    top:10px;
+    
+}
+.animacion-input{
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in;
+    font-size: .5rem !important;
+}
+
+
+
+.formulario input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    
+}
+.politicaForm{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+
+.campoInput input:focus{
+    box-shadow: none;
+    outline: 0;
+}
+
+
+.politicaForm input{
+    width: auto;
+    margin: 0 1.8rem 0 0;
+    
+}
+.politicaForm p{
+    color: #B2ABA5;
+    font-weight: 600;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.politicaForm a{
+    text-decoration: none;
+    color: #FDD2A8 ;
+    
+}
+
+.btn-enviar{
+    padding: 0.8rem 1.8rem ;
+    margin-top: 3rem;
+    background-color: #D6B491;
+    color: #fff;
+    /* margin-top: 4rem; */
+}
