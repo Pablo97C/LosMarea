@@ -1,6 +1,9 @@
 /**
  * WEBGRAFÍA
  * =========
+ * Propagación de eventos en Javascript: https://www.youtube.com/watch?v=l8FKIEFiMMg
+ * Curso JavaScript: 74. DOM: Flujo de Eventos (Burbuja y Captura) - #jonmircha: https://www.youtube.com/watch?v=myEsMzsJEFg
+ * Curso JavaScript: 75. DOM: stopPropagation & preventDefault - #jonmircha: https://www.youtube.com/watch?v=2LgnPW_VZYU
  * HTML DOM childNodes Property: https://www.w3schools.com/jsref/prop_node_childnodes.asp
  * HTML DOM classList Property: https://www.w3schools.com/jsref/prop_element_classlist.asp
  * HTML DOM contains() Method: https://www.w3schools.com/jsref/met_node_contains.asp
