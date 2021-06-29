@@ -14,11 +14,11 @@
 // Carga del DOM completada
 window.addEventListener('load', () => {
 
-    animacionInput();
+   animacionInput2();
 });
 
 
-// Esta función se encarga de darle animación a los labels de los inputs del formulario
+//Esta función se encarga de darle animación a los labels de los inputs del formulario
 function animacionInput() {
 
     // Formulario de Contacto
@@ -40,13 +40,9 @@ function animacionInput() {
             if (divHijo.classList.contains("campoInput")) {
 
                 const label = divHijo.querySelector('label');
-                //const input = divHijo.querySelector('input');
-
-                label.classList.remove('animacion-input');
-
-
-            }
-
+                //const input = divHijo.querySelector('input'); 
+                label.classList.remove('animacion-input'); 
+            } 
         }
 
         /////////////////////////////////////////////////////////////////////////////
@@ -67,3 +63,39 @@ function animacionInput() {
         // });
     });
 }
+
+function animacionInput2(){
+    const formularioContacto = document.querySelector('#idFormularioContacto');
+    formularioContacto.addEventListener('click', (evento)=>{
+          //console.log(evento.target.nodeName);
+        const arrayDivDeFormulario = formularioContacto.children;
+
+        for (let i = 0; i < arrayDivDeFormulario.length; i++) {
+            let divHijo = arrayDivDeFormulario[i];
+            
+            
+            // console.log(divHijo);
+            //console.log("classList: ", divHijo.classList); // devuelve array de clases
+            //console.log("className: ", divHijo.className); // devuelve string
+
+            if (divHijo.classList.contains("campoInput")) {
+                const label = divHijo.querySelector('label');
+
+
+                if (label.classList.contains('animacion-input')){ 
+                    label.classList.remove('animacion-input');
+                    // label.classList.add('animacion-input-off');
+                }
+            } 
+        }
+        
+            
+            let div = evento.target.offsetParent;
+            let label = div.querySelector('label');
+            // console.log(label);
+            label.classList.add('animacion-input');
+
+    })
+
+}
+

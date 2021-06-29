@@ -54,6 +54,7 @@
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     position: absolute;
     top:10px;
+    pointer-events: none;
     
 }
 .animacion-input{
@@ -62,6 +63,11 @@
     font-size: .5rem !important;
 }
 
+.animacion-input-off{
+    transform: translateY(10px);
+    transition: all 0.3s ease-in;
+    font-size: .5rem !important;
+}
 
 
 .formulario input{
