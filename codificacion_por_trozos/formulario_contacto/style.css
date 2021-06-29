@@ -12,7 +12,7 @@
 
 /* SECCION CONTACTO */
 .contacto{
-    background-image: url(img/03-home-contacto.jpg);
+    /* background-image: url(img/03-home-contacto.jpg); */
     /* height: 120vh; */
     padding-bottom: 4rem;
     /* display: flex; */
@@ -64,11 +64,11 @@
 }
 
 .animacion-input-off{
-    transform: translateY(10px);
+    /* transform: translateY(0px); */
     transition: all 0.3s ease-in;
-    font-size: .5rem !important;
+    /*font-size: 1rem !important;
+         */
 }
-
 
 .formulario input{
     background-color: transparent;
