@@ -1,3 +1,12 @@
+/**
+ * WEBGRAFIA
+ * =========
+ * CSS Transitions: https://www.w3schools.com/css/css3_transitions.asp
+ * CSS 2D Transforms: https://www.w3schools.com/css/css3_2dtransforms.asp
+ * CSS 3D Transforms Methods: https://www.w3schools.com/css/css3_3dtransforms.asp
+ * CSS Animations: https://www.w3schools.com/css/css3_animations.asp
+ * */
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -40,7 +49,7 @@ section{
     margin-bottom: 1.5rem;
 }
 
-.tag {
+.tag1 {
     width: 31.4%;
     margin: auto;
     height: 33rem;
@@ -50,7 +59,7 @@ section{
     /* display: none; */
 }
 
-.tag1 {
+.tag2 {
     display: none;
     position: relative;
     width: 31.4%;
@@ -69,9 +78,9 @@ section{
     display: inline;
 }
 
-.ani {
+/* .ani {
     transition: all .5s;
-}
+} */
 
 .ico-x {
     position: absolute;
@@ -84,7 +93,7 @@ section{
     display: flex;
 }
 
-.tag figure {
+.tag1 figure {
     position: relative;
     width: 100%;
     height: 18.5rem;
@@ -93,7 +102,7 @@ section{
     border-radius: 5px 5px 0 0;
 }
 
-.tag figure img {
+.tag1 figure img {
     object-fit: fill;
     object-position: center center;
     width: 100%;
@@ -181,7 +190,7 @@ section{
     background-color: #000;
 }
 
-.contenido-tag1 {
+.contenido-tag2 {
     padding: 1.9rem;
     /* background-color: #514134; */
     text-align: left;
@@ -190,7 +199,7 @@ section{
     height: 50%;
 }
 
-.contenido-tag1 h1 {
+.contenido-tag2 h1 {
     color: #fff;
     margin: 0.8rem 0 0.8rem 0;
     font-family: 'Montserrat', sans-serif;
@@ -202,7 +211,7 @@ section{
 
 }
 
-.contenido-tag1 p {
+.contenido-tag2 p {
     font-family: 'IBM Plex Serif', serif;
     color: #B2ABA5;
     font-size: .8rem;
@@ -218,27 +227,27 @@ section{
 
 }
 
-.tag:hover .ico {
+.tag1:hover .ico {
     opacity: 0.7;
 }
 
-.tag:hover .contenido {
+.tag1:hover .contenido {
     transform: translateY(-30px);
     transition: all 0.3s ease-in;
 
 }
 
-.tag:hover .transform {
+.tag1:hover .transform {
     transform: scale(1.3, 1);
     transition: all 0.3s ease-in;
 }
 
-.tag:hover .transform1 {
+.tag1:hover .transform1 {
     transform: translateY(-20px) scale(1, 1.8);
     transition: all 0.3s ease-in;
 }
 
-.tag:hover .transform2 {
+.tag1:hover .transform2 {
     transform: translatey(-20px) scale(1, 2.2);
     transition: all 0.3s ease-in;
 }
@@ -255,7 +264,7 @@ section{
 
 }
 
-.btn-conciertos-tag1 {
+.btn-conciertos-tag2 {
     padding: 5px;
     background-color: #fff;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -266,12 +275,12 @@ section{
     color: #514134;
 }
 
-.tag h1 {
+.tag1 h1 {
     margin: 1rem 1rem;
     color: #E8E6E5;
 }
 
-.tag p {
+.tag1 p {
     text-align: center;
     font-size: 12px;
     color: #E8E6E5;
