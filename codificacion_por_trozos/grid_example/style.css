@@ -1,0 +1,44 @@
+/**
+ * WEBGRAFIA
+ * =========
+ * A Complete Guide to Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
+ * 
+ */
+
+.rojo{
+    background-color: red;
+}
+
+.verde{
+    background-color: green;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.cuadrado{
+    height: 22rem;
+    width: 18rem;
+}
+
+.cuadrado2{
+    height: 18rem;
+    width: 18rem;
+}
+
+/* CSS GRID */
+.padre{
+    display: grid;
+    /* anchura que tendrán las columnas y el número de columas */
+    grid-template-columns: repeat(3,1fr); /* =>  grid-template-columns: 1fr 1fr 1fr;*/
+    
+    /* espacios entre fila y columna */
+    column-gap: 10px;
+    row-gap: 15px;
+
+    /* alineacion de hijos */
+    justify-items: center;
+    align-items: center;
+
+}

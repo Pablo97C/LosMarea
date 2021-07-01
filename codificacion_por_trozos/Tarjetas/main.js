@@ -1,11 +1,11 @@
 window.addEventListener('load', () => {
-    tarjetas();
-    
+    // tarjetas();
+
 });
 
 // Cambiar apariencia entre tag1 y tag
 
-function tarjetas(){
+function tarjetas() {
     const tarjeta1 = document.querySelector("#tarjeta1");
     const subtarjeta1 = document.querySelector("#subtarjeta1");
 
@@ -18,44 +18,43 @@ function tarjetas(){
 
 
 
-subtarjeta1.addEventListener('click',()=>{
+    subtarjeta1.addEventListener('click', () => {
 
-    tarjeta1.classList.toggle("desplegar");
-    subtarjeta1.classList.toggle("ocultar");
-});
+        tarjeta1.classList.toggle("desplegar");
+        subtarjeta1.classList.toggle("ocultar");
+    });
 
-tarjeta1.addEventListener('click',()=>{
+    tarjeta1.addEventListener('click', () => {
 
-    tarjeta1.classList.toggle("desplegar");
-    subtarjeta1.classList.toggle("ocultar");
-});
-
-
-
-subtarjeta2.addEventListener('click',()=>{
-
-    tarjeta2.classList.toggle("desplegar");
-    subtarjeta2.classList.toggle("ocultar");
-});
-
-tarjeta2.addEventListener('click',()=>{
-
-    tarjeta2.classList.toggle("desplegar");
-    subtarjeta2.classList.toggle("ocultar");
-});
+        tarjeta1.classList.toggle("desplegar");
+        subtarjeta1.classList.toggle("ocultar");
+    });
 
 
 
-subtarjeta3.addEventListener('click',()=>{
+    subtarjeta2.addEventListener('click', () => {
 
-    tarjeta3.classList.toggle("desplegar");
-    subtarjeta3.classList.toggle("ocultar");
-});
+        tarjeta2.classList.toggle("desplegar");
+        subtarjeta2.classList.toggle("ocultar");
+    });
 
-tarjeta3.addEventListener('click',()=>{
+    tarjeta2.addEventListener('click', () => {
 
-    tarjeta3.classList.toggle("desplegar");
-    subtarjeta3.classList.toggle("ocultar");
-});
+        tarjeta2.classList.toggle("desplegar");
+        subtarjeta2.classList.toggle("ocultar");
+    });
+
+
+
+    subtarjeta3.addEventListener('click', () => {
+
+        tarjeta3.classList.toggle("desplegar");
+        subtarjeta3.classList.toggle("ocultar");
+    });
+
+    tarjeta3.addEventListener('click', () => {
+
+        tarjeta3.classList.toggle("desplegar");
+        subtarjeta3.classList.toggle("ocultar");
+    });
 }
-
