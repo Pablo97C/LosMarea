@@ -19,7 +19,7 @@
 // Carga del DOM completada
 window.addEventListener('load', () => {
 
-    animacionInputFocus1();
+    animacionInputFocus3();
 });
 
 
@@ -133,9 +133,7 @@ function animacionInputFocus1() {
             if (!labelFormulario.classList.contains('animacion-input')) {
                 labelFormulario.classList.add('animacion-input');
             }
-        }
-
-
+        } 
     });
 
 
@@ -158,12 +156,20 @@ function animacionInputFocus1() {
                 labelFormulario.classList.add('animacion-input-off');
             }
         }
-
-
-
-
-
     });
+}
 
-
+function animacionInputFocus3(){
+    let inputs = document.querySelectorAll('.inputFormulario');
+    // console.log(inputs);
+    inputs.forEach(element => {
+        let input = element.previousElementSibling;
+        element.addEventListener("focusin", (evento) => {
+            input.classList.add('animacion-input');
+        });
+        element.addEventListener("focusout", (evento) => {
+            input.classList.remove('animacion-input');
+            input.classList.add('animacion-input-off');
+        });
+    })
 }
