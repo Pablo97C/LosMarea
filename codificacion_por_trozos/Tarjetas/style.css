@@ -51,13 +51,156 @@ section{
 
     display: grid;
     /* anchura que tendrán las columnas y el número de columas */
-    grid-template-columns: repeat(3,1fr); /* =>  grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(3,1.2fr); /* =>  grid-template-columns: 1fr 1fr 1fr;*/
     
     /* espacios entre fila y columna */
-    column-gap: 10px;
+    column-gap: 20px;
     row-gap: 15px;
 
     /* alineacion de hijos */
     justify-items: center;
     align-items: center;
+}
+.tarjeta-noticias{
+    width: 100%;
+    overflow: hidden;
+    height: 33rem;
+    border-radius: 5px 5px 0 0;
+}
+
+#tarjeta1 figure{
+    transform: scale(1.5, 1);
+}
+#tarjeta2 figure{
+    transform: scale(1, 1.8);
+}
+
+#tarjeta3 figure{
+    transform: scale(1, 2.2);
+}
+
+
+#tarjeta1:hover figure {
+    transform: scale(1.3, 1);
+    transition: all 0.3s ease-in 0s;
+}
+
+.tarjeta-noticias:hover .subtarjeta-concierto{
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in;
+}
+
+
+#tarjeta2:hover figure{
+    transform: translateY(-20px) scale(1, 1.8);
+    transition: all 0.3s ease-in;
+}
+
+#tarjeta3:hover figure{
+    transform: translatey(-20px) scale(1, 2.2);
+    transition: all 0.3s ease-in;
+}
+
+.subtarjeta-concierto{
+    color: #ffff;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+.subtarjeta-concierto h1{
+    margin: 1rem 1rem;
+}
+.subtarjeta-foto{
+    height: 55%;
+    overflow: hidden;
+}
+.subtarjeta-foto figure {
+    width: 100%; 
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.subtarjeta-foto figure img {
+    object-fit: fill;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.subtarjeta-concierto{
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    background-color: #514134;
+    /* position: relative; */
+    height: 45%;
+}
+.subtarjeta-concierto p {
+    text-align: center;
+    font-size: 12px;
+    color: #E8E6E5;
+}
+
+.btn-conciertos {
+    padding: 5px;
+    background-color: #FDD2A8;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #514134; 
+}
+.ico {
+    transform: translateY(65px);
+    color: #FDD2A8;
+}
+
+.ico3{
+    transform: translateY(77px);
+    color: #FDD2A8;
+}
+
+.subtarjeta-detalle{
+    width: 100%;
+    height: 45%;
+    background-color: #BB9C7F;
+    text-align: left;
+    padding: 2rem;
+}
+
+.subtarjeta-detalle{
+    color: white;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 16px;
+}
+
+.btn-mas a{
+    bottom: 1.5rem;
+    color: #DCB693;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    height: 1rem;
+    margin-top: 40%;
+    display: block;
+}
+ /* .btn-mas:hover {
+    text-decoration: underline; 
+} */
+
+.btn-mas a:hover {
+    border-bottom: 1px solid #DCB693;
+}
+
+.btn-ver {
+    padding: 10px;
+    background-color: #514134;
+    color: #E8E6E5;
+    border-radius: 3px;
+    font-size: 19px;
+    width: 2.5rem;
+    line-height: 45px;
+    /* font-family: "Open Sans", Helvetica, Arial, sans-serif; */
+    text-decoration: none;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 500;
 }
