@@ -95,31 +95,26 @@ section{
     transition: all 0.3s ease-in 0s;
 }
 
-.tarjeta-noticias:hover .subtarjeta-concierto{
-    transform: translateY(-20px);
+.tarjeta-noticias:hover .subtarjeta-concierto, 
+.tarjeta-noticias:hover .subtarjeta-detalle{
+    transform: translateY(-9%);
     transition: all 0.3s ease-in;
 }
 
 
 #tarjeta2:hover figure{
-    transform: translateY(-20px) scale(1, 1.8);
+    transform: translateY(-10%) scale(1, 1.8);
     transition: all 0.3s ease-in;
 }
 
 #tarjeta3:hover figure{
-    transform: translatey(-20px) scale(1, 2.2);
+    transform: translateY(-10%) scale(1, 2.2);
     transition: all 0.3s ease-in;
 }
 
-.subtarjeta-concierto{
-    color: #ffff;
-    padding: 1.5rem 1.5rem 0 1.5rem;
-}
-.subtarjeta-concierto h1{
-    margin: 1rem 1rem;
-}
+
 .subtarjeta-foto{
-    height: 55%;
+    height: 50%;
     overflow: hidden;
 }
 .subtarjeta-foto figure {
@@ -139,10 +134,18 @@ section{
 
 .subtarjeta-concierto{
     padding: 1.5rem 1.5rem 0 1.5rem;
+    color: #ffff;
     background-color: #514134;
-    /* position: relative; */
-    height: 50%;
+    height: 55%;
+
+    position: relative;
 }
+
+
+.subtarjeta-concierto h1{
+    margin: 1rem 1rem;
+}
+
 .subtarjeta-concierto p {
     text-align: center;
     font-size: 12px;
@@ -160,7 +163,9 @@ section{
     color: #514134; 
 }
 .ico {
-    transform: translateY(65px);
+    position: absolute;
+    bottom: 0;
+    /* transform: translateY(65px); */
     color: #FDD2A8;
 }
 
