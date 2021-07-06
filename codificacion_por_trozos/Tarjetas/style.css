@@ -25,6 +25,15 @@ section{
     display: none;
 }
 
+.ocultar {
+    display: none;
+    transition: all 0.3s ease-in;
+}
+
+.desplegar {
+    display: inline;
+    transition: all 0.3s ease-in;
+}
 
 /* ESPECIFICO */
 
@@ -95,12 +104,16 @@ section{
     transition: all 0.3s ease-in 0s;
 }
 
-.tarjeta-noticias:hover .subtarjeta-concierto, 
+/* .tarjeta-noticias:hover .subtarjeta-concierto, 
 .tarjeta-noticias:hover .subtarjeta-detalle{
     transform: translateY(-9%);
     transition: all 0.3s ease-in;
-}
+} */
 
+.tarjeta-noticias .hover-translate:hover{
+    transform: translateY(-9%);
+    transition: all 0.3s ease-in;
+}
 
 #tarjeta2:hover figure{
     transform: translateY(-10%) scale(1, 1.8);
@@ -180,9 +193,7 @@ section{
     background-color: #BB9C7F;
     text-align: left;
     padding: 2rem;
-}
 
-.subtarjeta-detalle{
     color: white;
     font-family: 'IBM Plex Serif', serif;
     font-size: 16px;
