@@ -2,11 +2,15 @@
  * WEBGRAFIA
  * =========
  * CSS Transitions: https://www.w3schools.com/css/css3_transitions.asp
+ * transition: https://css-tricks.com/almanac/properties/t/transition/
  * CSS 2D Transforms: https://www.w3schools.com/css/css3_2dtransforms.asp
  * CSS 3D Transforms Methods: https://www.w3schools.com/css/css3_3dtransforms.asp
  * CSS Animations: https://www.w3schools.com/css/css3_animations.asp
  * A Complete Guide to Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
  * A Complete Guide to Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
+ * Difference between animation and transition in CSS: https://www.geeksforgeeks.org/difference-between-animation-and-transition-in-css/#:~:text=CSS%20transitions%20allow%20you%20to,do%20not%20take%20effect%20immediately.&text=Animations%20consist%20of%20two%20steps,end%20states%20of%20the%20animation.
+ * Animatable CSS properties: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+ * 
  * */
 
 /* GENERAL */
@@ -26,13 +30,25 @@ section{
 }
 
 .ocultar {
-    display: none;
-    transition: all 0.3s ease-in;
+    /* height: 0px !important; */
+    transform: translateY(-100%);
 }
 
 .desplegar {
     display: inline;
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in 0s;
+}
+
+.h-55-percentage{
+    height: 55% !important;
+}
+
+.h-50-percentage{
+    height: 50% !important;
+}
+
+.h-45-percentage{
+    height: 45% !important;
 }
 
 /* ESPECIFICO */
@@ -92,7 +108,28 @@ section{
 
 .tarjeta-noticias .hover-translate:hover{
     transform: translateY(-9%);
-    transition: all 0.3s ease-in;
+    /* transition: all 0.3s ease-in; */
+}
+
+    /* Subtarjetas GENERAL */
+.subtarjeta-foto, .subtarjeta-concierto, .subtarjeta-detalle{
+    /*transition: [transition-property] [transition-duration]
+    [transition-timing-function] [transition-delay];*/
+    transition: transform 0.3s ease-in 0s;
+}
+    /* Subtarjeta Foto */
+.subtarjeta-foto{
+    /* overflow: hidden; */
+    height: 50%;
+    /* cogemos la altura del padre:  ".tarjeta-noticias" */
+    /* height: calc(33rem/2); */
+}
+
+.subtarjeta-foto figure {
+    width: 100%; 
+    /* overflow: hidden; */
+    position: relative;
+    height: 100%;
 }
 
 #tarjeta1 figure{
@@ -118,8 +155,6 @@ section{
     transition: all 0.3s ease-in;
 } */
 
-
-
 #tarjeta2:hover figure{
     transform: translateY(-10%) scale(1, 1.8);
     transition: all 0.3s ease-in;
@@ -129,18 +164,6 @@ section{
     transform: translateY(-10%) scale(1, 2.2);
     transition: all 0.3s ease-in;
 }
-    /* subtarjeta Foto */
-
-.subtarjeta-foto{
-    height: 50%;
-    overflow: hidden;
-}
-.subtarjeta-foto figure {
-    width: 100%; 
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-}
 
 .subtarjeta-foto figure img {
     object-fit: fill;
@@ -149,6 +172,7 @@ section{
     height: 100%;
 }
 
+
 /* Subtarjeta Conciertos */
 
 .subtarjeta-concierto{
@@ -156,8 +180,11 @@ section{
     color: #ffff;
     background-color: #514134;
     height: 55%;
+    /* cogemos la altura del padre:  ".tarjeta-noticias" */
+    /* height: calc(33rem/1.8); */
 
     position: relative;
+
 }
 
 
@@ -198,6 +225,8 @@ section{
 .subtarjeta-detalle{
     width: 100%;
     height: 45%;
+    /* cogemos la altura del padre:  ".tarjeta-noticias" */
+    /* height: calc(33rem/2.2); */
     background-color: #BB9C7F;
     text-align: left;
     padding: 2rem;
@@ -206,6 +235,7 @@ section{
     font-family: 'IBM Plex Serif', serif;
     font-size: 16px;
 }
+
 
 .btn-mas a{
     bottom: 1.5rem;

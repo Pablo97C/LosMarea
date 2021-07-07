@@ -24,12 +24,42 @@ function tarjetas() {
 
     tarjetasNoticias.forEach((tarjeta, indice, array) => {
         tarjeta.addEventListener('click', (evento) => {
+            // Subtarjetas de tarjeta noticias
             const subtarjetaFoto = tarjeta.querySelector('.subtarjeta-foto');
             const subtarjetaConcierto = tarjeta.querySelector('.subtarjeta-concierto');
             const subtarjetaDetalle = tarjeta.querySelector('.subtarjeta-detalle');
+
+            // Aplicamos a las subtarjetas
+            // ocultar
             subtarjetaFoto.classList.toggle("ocultar");
+            subtarjetaConcierto.classList.toggle("ocultar");
+            subtarjetaDetalle.classList.toggle("ocultar");
+
+            // hover-translate
             subtarjetaConcierto.classList.toggle("hover-translate");
             subtarjetaDetalle.classList.toggle("hover-translate");
+
+            // Aplicamos a elementos dentro de subtarjetas
+            // d-none
+            const i_flecha = subtarjetaConcierto.querySelector("i");
+            i_flecha.classList.toggle("d-none");
+
+            /**
+             * Añadir el código JS necesario para que cuando 
+             * demos click a una tarjeta el tamaño de 
+             * "subtarjetaConcierto" y la "subtarjetaDetalle" tengan
+             * un tamaño del 50%. Cuando se vuelva a dar click
+             * las subtarjetas volverán a su tamaño original (toggle).
+             * 
+             */
+
+            /**
+             * INTENTAR MODIFICAR LA SUBTARJETA DETALLE PARA 
+             * QUE EL ENLACE "MÁS" SE "PEGUE" A BAJO Y SE MANTENGA
+             * SIEMPRE AHÍ (position: relative y absolute)
+             */
+
+
         });
     });
 
